@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "d67b783f-2cc8-4e25-a857-2463e8095524",
+		"name": "login ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"anha\",\r\n    \"password\":\"123\",\r\n    \"role\":\"admin\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8988/loginService/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"loginService",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "after succussful login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5JjunbTBklcU/dVl4uOkA+KuRa0WkzzAxjB9ETNYvwLCS39AU7M39XUoGMRIIoPflijyUqU6SCd3N/DRGXhoy6rzRaMBty1ZuLyP9bn5gm66JQUMRowl728NsUTheUMe4LR8w//Aric1uSouQTkUMxRF0Ey66vXP8PESrSFCWIyigvlO65gVrnm1ijPUzAWDksm+9GVg8F2l2/sj6IupdSoHV/6mdff2VQ7DT9yvzTM=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"anha\",\r\n    \"password\":\"123\",\r\n    \"role\":\"admin\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8988/masterService/country/Test",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"masterService",
+						"country",
+						"Test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user register for login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"anha\",\r\n    \"password\":\"123\",\r\n    \"role\":\"admin\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8988/loginService/usersRegister",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"loginService",
+						"usersRegister"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
